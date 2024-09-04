@@ -16,9 +16,9 @@ static void	rotate(t_stack_node **stack)
 {
 	t_stack_node	*last;
 
-	if(!stack || !(*stack) ||  !(*stack)->next)
+	if (!stack || !(*stack) ||  !(*stack)->next)
 		return ;
-	last = find_last(*stack);//tenho de programar esta funcao
+	last = find_last(*stack);
 	last->next = *stack; //O proximo a seguir ao ultimo node e o atual primeiro
 	*stack = (*stack)->next; //O Segundo passa a ser o primeiro
 	(*stack)->prev = NULL; //O anterior do novo primeiro e null, pois nao tem nada antes dele

@@ -23,16 +23,16 @@ int main(int argc, char **argv)
 		return (1);
 	else if (argc == 2)
 		argv = split(argv[1], ' ');
-	init_stack_a(&a, argv + 1); //tenho de testar esta funcao //tem argv + 1 porque queremos comecar pelo segundo elemento pois o primeiro e o nome de programa
-	if (!sorted(a)) //tenho de testar esta funcao
+	init_stack_a(&a, argv + 1); //tem argv + 1 porque queremos comecar pelo segundo elemento pois o primeiro e o nome de programa
+	if (!sorted(a))
 	{
-		if (stack_len(a) == 2) //tenho de programar esta funcao
-			sa(&a); //tenho de programar esta funcao
-		else if (stack_len(a) == 3) //tenho de programar esta funcao
-			sort_three(&a); //tenho de programar esta funcao
+		if (stack_len(a) == 2)
+			sa(&a);
+		else if (stack_len(a) == 3)
+			sort_three(&a);
 		else
 			sort_stacks(&a, &b);
 	}
-	free_stack(&a); //tenho de programar esta funcao
+	free_stack(&a);
 	return (0);
 }
