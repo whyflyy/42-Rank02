@@ -69,7 +69,7 @@ t_stack_node	*find_min(t_stack_node *stack) //Funcao que vai correr uma stack e 
 	return (min_node); //Devolve o node com o valor menor
 }
 
-t_stack_node	*find_max(t_stack_node *stack) //Funcao que vai correr uma stack e devolver o node com o menor valor 
+t_stack_node	*find_max(t_stack_node *stack) //Funcao que vai correr uma stack e devolver o node com o maior valor 
 {
 	long			max;
 	t_stack_node	*max_node;
