@@ -57,6 +57,21 @@ void	free_stack(t_stack_node **stack)
 	*stack = NULL; //Igualo o pointer da stack a NULL para terminar de libertar tudo
 }
 
+void	free_argv(char **argv)
+{
+	int	i;
+
+	i = 0;
+	if (!argv || !*argv)
+		return ;
+	while (argv[i] != NULL)
+	{
+		free(argv[i]);
+		i++;
+	}
+	free(argv);
+}
+
 void	error(t_stack_node **stack)
 {
 	free_stack(stack);

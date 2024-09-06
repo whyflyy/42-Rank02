@@ -34,5 +34,7 @@ int main(int argc, char **argv)
 			sort_stacks(&a, &b);
 	}
 	free_stack(&a);
+	if (argc == 2)
+		free_argv(argv);
 	return (0);
 }

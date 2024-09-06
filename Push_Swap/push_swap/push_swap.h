@@ -57,6 +57,7 @@ int		syntax_error(char *nbr);
 int		duplicate_check(t_stack_node *stack, int n);
 void	free_stack(t_stack_node **stack);
 void	error(t_stack_node **stack);
+void	free_argv(char **argv);
 
 //Node Initialization
 void	init_nodes_a(t_stack_node *a, t_stack_node *b);
